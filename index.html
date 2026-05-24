@@ -4,17 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!-- ================= SEO & META TAGS ================= -->
     <title>ZonaBawang - Links</title>
     <meta name="title" content="ZonaBawang - Link Terpusat">
     <meta name="description" content="Komunitas Anime & Gaming. Ikuti keseruan kami, dukung karya kami, atau hubungi kami melalui tautan resmi ini.">
     <meta name="keywords" content="ZonaBawang, Anime, Gaming, Komunitas, Link in Bio">
     
+    <!-- Open Graph / Facebook / WhatsApp -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://zonabawang.com"> 
+    <meta property="og:url" content="https://xelanjaya.github.io/zonabawang/"> 
     <meta property="og:title" content="ZonaBawang - Komunitas Anime & Gaming">
     <meta property="og:description" content="Kumpulan tautan resmi ZonaBawang. Ikuti keseruan kami, dukung karya kami, atau hubungi kami.">
-    
     <meta property="og:image" content="MASUKKAN_LINK_GAMBAR_BANNER_ANDA_DISINI">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://xelanjaya.github.io/zonabawang/">
+    <meta property="twitter:title" content="ZonaBawang - Komunitas Anime & Gaming">
+    <meta property="twitter:description" content="Kumpulan tautan resmi ZonaBawang. Ikuti keseruan kami, dukung karya kami, atau hubungi kami.">
+    <meta property="twitter:image" content="MASUKKAN_LINK_GAMBAR_BANNER_ANDA_DISINI">
+    <!-- =================================================== -->
+
+    <!-- ================= GOOGLE ANALYTICS ================= -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -22,8 +33,12 @@
       gtag('js', new Date());
       gtag('config', 'G-XXXXXXXXXX');
     </script>
+    <!-- =================================================== -->
+
+    <!-- Memanggil FontAwesome untuk Ikon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+    <!-- ================= CSS COMPILED & KUSTOM TEMA MANGA ================= -->
     <style>
         /* 1. RESET BASE */
         *, ::before, ::after { box-sizing: border-box; margin: 0; padding: 0; border-width: 0; border-style: solid; border-color: #000; }
@@ -43,7 +58,7 @@
         .z-50 { z-index: 50; }
         .flex { display: flex; }
         .inline-block { display: inline-block; }
-        .hidden { display: none; }
+        .hidden { display: none !important; }
         .flex-col { flex-direction: column; }
         .items-center { align-items: center; }
         .justify-center { justify-content: center; }
@@ -61,41 +76,18 @@
             background-size: 16px 16px;
         }
 
-        /* 4. LAYOUT RESPONSIVE (Smartphone -> Tablet -> Laptop) */
+        /* 4. LAYOUT RESPONSIVE */
         .layout-panel {
-            width: 100%;
-            max-width: 28rem;
-            margin: 0 auto;
-            background-color: #ffffff;
-            border: 4px solid #000;
-            box-shadow: 10px 10px 0px #000;
-            padding: 2rem;
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
+            width: 100%; max-width: 28rem; margin: 0 auto; background-color: #ffffff;
+            border: 4px solid #000; box-shadow: 10px 10px 0px #000; padding: 2rem;
+            display: flex; flex-direction: column; gap: 2rem;
         }
-        .profile-box {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            border-bottom: 3px solid #000;
-            padding-bottom: 1.5rem;
-        }
+        .profile-box { display: flex; flex-direction: column; align-items: center; text-align: center; border-bottom: 3px solid #000; padding-bottom: 1.5rem; }
         .profile-avatar-wrap { margin: 0 auto; }
         .links-wrapper { width: 100%; }
-        .links-box {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
+        .links-box { display: flex; flex-direction: column; gap: 1rem; }
         .footer-desktop { display: none; }
-        .footer-mobile {
-            margin-top: 2rem;
-            padding-top: 1rem;
-            border-top: 3px solid #000;
-            text-align: center;
-        }
+        .footer-mobile { margin-top: 2rem; padding-top: 1rem; border-top: 3px solid #000; text-align: center; }
 
         @media (min-width: 768px) {
             .layout-panel { max-width: 42rem; padding: 2.5rem; }
@@ -116,55 +108,22 @@
 
         /* 5. DESAIN BUBBLE WARNA PLATFORM */
         .manga-btn {
-            border: 3px solid #000;
-            box-shadow: 5px 5px 0px #000;
-            transition: all 0.2s cubic-bezier(0.25, 1, 0.5, 1);
-            display: flex;
-            align-items: stretch; 
-            min-height: 3.5rem;
-            text-decoration: none;
-            overflow: hidden; 
+            border: 3px solid #000; box-shadow: 5px 5px 0px #000; transition: all 0.2s cubic-bezier(0.25, 1, 0.5, 1);
+            display: flex; align-items: stretch; min-height: 3.5rem; text-decoration: none; overflow: hidden; 
         }
-        .manga-btn:hover:not(:disabled) {
-            transform: translate(-3px, -3px);
-            box-shadow: 8px 8px 0px #000;
-        }
-        .manga-btn:active:not(:disabled) {
-            transform: translate(5px, 5px);
-            box-shadow: 0px 0px 0px #000;
-        }
+        .manga-btn:hover:not(:disabled) { transform: translate(-3px, -3px); box-shadow: 8px 8px 0px #000; }
+        .manga-btn:active:not(:disabled) { transform: translate(5px, 5px); box-shadow: 0px 0px 0px #000; }
         .manga-btn:disabled { cursor: not-allowed; opacity: 0.7; filter: grayscale(100%); }
 
-        .manga-icon {
-            width: 4rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-right: 3px solid #000;
-            transition: background-color 0.2s ease, color 0.2s ease;
-        }
-        .manga-text {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            padding: 1rem;
-            font-weight: 900;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            font-size: 0.875rem;
-        }
+        .manga-icon { width: 4rem; display: flex; align-items: center; justify-content: center; border-right: 3px solid #000; transition: background-color 0.2s ease, color 0.2s ease; }
+        .manga-text { flex: 1; display: flex; align-items: center; justify-content: center; position: relative; padding: 1rem; font-weight: 900; letter-spacing: 0.1em; text-transform: uppercase; font-size: 0.875rem; }
 
         .manga-label { transition: transform 0.2s cubic-bezier(0.25, 1, 0.5, 1); }
         .manga-btn:hover .manga-label { transform: translateX(-12px); }
+        
         .manga-arrow {
-            position: absolute;
-            right: 1.5rem;
-            opacity: 0;
-            transform: translateX(-15px);
-            transition: all 0.2s cubic-bezier(0.25, 1, 0.5, 1);
-            font-size: 1rem;
+            position: absolute; right: 1.5rem; opacity: 0; transform: translateX(-15px);
+            transition: all 0.2s cubic-bezier(0.25, 1, 0.5, 1); font-size: 1rem;
         }
         .manga-btn:hover .manga-arrow { opacity: 1; transform: translateX(0); }
 
@@ -219,54 +178,28 @@
 
         /* ================= ANIMASI FULL TOMBOL CLOSE ================= */
         .manga-close-btn {
-            position: absolute;
-            top: -1.5rem;
-            right: -1rem;
-            z-index: 50;
-            width: 2.5rem;
-            height: 2.5rem;
-            background-color: #ffffff;
-            border: 3px solid #000;
-            box-shadow: 4px 4px 0px #000;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.25rem;
-            color: #000;
-            cursor: pointer;
+            position: absolute; top: -1.5rem; right: -1rem; z-index: 50; width: 2.5rem; height: 2.5rem;
+            background-color: #ffffff; border: 3px solid #000; box-shadow: 4px 4px 0px #000;
+            display: flex; align-items: center; justify-content: center; font-size: 1.25rem; color: #000; cursor: pointer;
             transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
         }
-        
-        .manga-close-btn:hover {
-            background-color: #dc2626; 
-            color: #ffffff;
-            transform: rotate(180deg) scale(1.1);
-            box-shadow: 6px 6px 0px #000;
-        }
-
-        .manga-close-btn:active {
-            transform: rotate(180deg) scale(0.9) translate(4px, 4px);
-            box-shadow: 0px 0px 0px #000;
-            transition: all 0.1s ease;
-        }
-        /* ============================================================= */
-
+        .manga-close-btn:hover { background-color: #dc2626; color: #ffffff; transform: rotate(180deg) scale(1.1); box-shadow: 6px 6px 0px #000; }
+        .manga-close-btn:active { transform: rotate(180deg) scale(0.9) translate(4px, 4px); box-shadow: 0px 0px 0px #000; transition: all 0.1s ease; }
     </style>
-    </head>
+    <!-- =================================================== -->
+</head>
 <body class="flex justify-center items-center min-h-screen p-4 md:p-8">
 
     <div class="layout-panel relative z-10">
         
         <div class="profile-box">
-            
             <div class="profile-avatar-wrap relative inline-block mb-6">
                 <div class="manga-strike"></div>
-                
-                <img src="BAWANG.png" alt="Logo ZonaBawang" style="width: 7rem; height: 7rem;" class="object-cover border-[4px] border-black bg-white z-10 relative">
-                </div>
+                <!-- GANTI LINK DI BAWAH INI DENGAN LOGO ANDA -->
+                <img src="MASUKKAN_LINK_LOGO_ANDA_DISINI" alt="Logo ZonaBawang" style="width: 7rem; height: 7rem;" class="object-cover border-[4px] border-black bg-white z-10 relative">
+            </div>
             
             <h1 style="font-size: 2rem; line-height: 1.2; margin-bottom: 0.5rem;" class="font-black uppercase tracking-widest text-black">ZonaBawang</h1>
-            
             <p style="font-size: 0.875rem; line-height: 1.6; margin-bottom: 1rem;" class="text-black font-bold">
                 KOMUNITAS ANIME & GAMING.<br>IKUTI KESERUAN KAMI, DUKUNG KARYA KAMI, ATAU HUBUNGI KAMI.
             </p>
@@ -274,12 +207,12 @@
             <div class="footer-desktop">
                 <p style="font-size: 0.75rem;" class="font-bold text-gray-500 uppercase tracking-widest">POWERED BY <span class="text-black">ZONABAWANG</span></p>
             </div>
-            
         </div>
         
         <div class="links-wrapper">
             <div class="links-box">
                 
+                <!-- Bubble 1: Instagram -->
                 <a href="https://www.instagram.com/zonabawang" data-nama="Instagram" class="track-link manga-btn btn-ig" target="_blank">
                     <div class="manga-icon"><i class="fa-brands fa-instagram" style="font-size: 1.5rem;"></i></div>
                     <div class="manga-text">
@@ -288,6 +221,7 @@
                     </div>
                 </a>
                 
+                <!-- Bubble 2: Facebook -->
                 <a href="https://www.facebook.com/zonabawangg" data-nama="Facebook" class="track-link manga-btn btn-fb" target="_blank">
                     <div class="manga-icon"><i class="fa-brands fa-facebook-f" style="font-size: 1.5rem;"></i></div>
                     <div class="manga-text">
@@ -296,6 +230,7 @@
                     </div>
                 </a>
                 
+                <!-- Bubble 3: Threads -->
                 <a href="https://www.threads.com/@zonabawang" data-nama="Threads" class="track-link manga-btn btn-threads" target="_blank">
                     <div class="manga-icon"><i class="fa-brands fa-threads" style="font-size: 1.5rem;"></i></div>
                     <div class="manga-text">
@@ -304,6 +239,7 @@
                     </div>
                 </a>
                 
+                <!-- Bubble 4: Kontak (Modal) -->
                 <button id="openContactModal" data-nama="Form_Kontak" class="track-link manga-btn btn-contact btn-full">
                     <div class="manga-icon"><i class="fa-solid fa-envelope" style="font-size: 1.5rem;"></i></div>
                     <div class="manga-text">
@@ -312,6 +248,7 @@
                     </div>
                 </button>
 
+                <!-- Bubble 5: Trakteer -->
                 <a href="https://trakteer.id/zonabawang" data-nama="Trakteer" class="track-link manga-btn btn-trakteer btn-full" target="_blank">
                     <div class="manga-icon"><i class="fa-solid fa-mug-hot" style="font-size: 1.5rem;"></i></div>
                     <div class="manga-text">
@@ -326,12 +263,13 @@
                 <p style="font-size: 0.75rem;" class="font-bold text-gray-500 uppercase tracking-widest">POWERED BY <span class="text-black">ZONABAWANG</span></p>
             </div>
         </div>
-
     </div>
 
+    <!-- ================= MODAL FORM KONTAK FORMSPREE ================= -->
     <div id="contactModal" class="fixed inset-0 z-50 flex items-center justify-center hidden opacity-0 transition-all modal-overlay-bg p-4">
         <div class="manga-modal-card p-6 relative transform scale-95 transition-all" id="modalContent">
             
+            <!-- Tombol Tutup Full Animasi -->
             <button id="closeContactModal" class="manga-close-btn" title="Tutup">
                 <i class="fa-solid fa-xmark"></i>
             </button>
@@ -368,11 +306,17 @@
             </form>
         </div>
     </div>
+    <!-- =================================================== -->
+
+    <!-- ================= SDK FORMSPREE ================= -->
     <script>
         window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
         formspree('initForm', { formElement: '#contactForm', formId: 'mgodazrb' });
     </script>
     <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+    <!-- =================================================== -->
+
+    <!-- ================= JAVASCRIPT UI LOGIC ================= -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             
@@ -421,5 +365,6 @@
 
         });
     </script>
-    </body>
+    <!-- =================================================== -->
+</body>
 </html>
