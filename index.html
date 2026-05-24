@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>ZonaBawang - Links</title>
+    <meta name="title" content="ZonaBawang - Link Terpusat">
+    <meta name="description" content="Komunitas Anime & Gaming. Ikuti keseruan kami, dukung karya kami, atau hubungi kami melalui tautan resmi ini.">
+    <meta name="keywords" content="ZonaBawang, Anime, Gaming, Komunitas, Link in Bio">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zonabawang.com"> 
+    <meta property="og:title" content="ZonaBawang - Komunitas Anime & Gaming">
+    <meta property="og:description" content="Kumpulan tautan resmi ZonaBawang. Ikuti keseruan kami, dukung karya kami, atau hubungi kami.">
+    
+    <meta property="og:image" content="MASUKKAN_LINK_GAMBAR_BANNER_ANDA_DISINI">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        /* 1. RESET BASE */
+        *, ::before, ::after { box-sizing: border-box; margin: 0; padding: 0; border-width: 0; border-style: solid; border-color: #000; }
+        html { line-height: 1.5; -webkit-text-size-adjust: 100%; }
+        body { margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #000; }
+        a, button { text-decoration: inherit; color: inherit; cursor: pointer; font-family: inherit; }
+        img { display: block; max-width: 100%; }
+        input, textarea { font-family: inherit; margin: 0; }
+
+        /* 2. UTILITIES DASAR */
+        ::selection { background-color: #000; color: #fff; }
+        .fixed { position: fixed; }
+        .absolute { position: absolute; }
+        .relative { position: relative; }
+        .inset-0 { top: 0; right: 0; bottom: 0; left: 0; }
+        .z-10 { z-index: 10; }
+        .z-50 { z-index: 50; }
+        .flex { display: flex; }
+        .inline-block { display: inline-block; }
+        .hidden { display: none; }
+        .flex-col { flex-direction: column; }
+        .items-center { align-items: center; }
+        .justify-center { justify-content: center; }
+        .w-full { width: 100%; }
+        .min-h-screen { min-height: 100vh; }
+        .object-cover { object-fit: cover; }
+        .resize-none { resize: none; }
+        .text-center { text-align: center; }
+        .uppercase { text-transform: uppercase; }
+        
+        /* 3. TEMA MANGA & BACKGROUND HALFTONE */
+        body {
+            background-color: #f8fafc;
+            background-image: radial-gradient(#cbd5e1 2px, transparent 2px);
+            background-size: 16px 16px;
+        }
+
+        /* 4. LAYOUT RESPONSIVE (Smartphone -> Tablet -> Laptop) */
+        .layout-panel {
+            width: 100%;
+            max-width: 28rem;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border: 4px solid #000;
+            box-shadow: 10px 10px 0px #000;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .profile-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            border-bottom: 3px solid #000;
+            padding-bottom: 1.5rem;
+        }
+        .profile-avatar-wrap { margin: 0 auto; }
+        .links-wrapper { width: 100%; }
+        .links-box {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .footer-desktop { display: none; }
+        .footer-mobile {
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 3px solid #000;
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            .layout-panel { max-width: 42rem; padding: 2.5rem; }
+            .links-box { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+            .btn-full { grid-column: span 2; }
+        }
+
+        @media (min-width: 1024px) {
+            .layout-panel { max-width: 64rem; flex-direction: row; align-items: stretch; padding: 3rem; gap: 3rem; }
+            .profile-box { flex: 0 0 35%; border-bottom: none; border-right: 4px solid #000; padding-bottom: 0; padding-right: 3rem; align-items: flex-start; text-align: left; }
+            .profile-avatar-wrap { margin: 0; }
+            .links-wrapper { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+            .links-box { gap: 1.5rem; }
+            .btn-full { grid-column: span 1; }
+            .footer-mobile { display: none; }
+            .footer-desktop { display: block; width: 100%; margin-top: auto; padding-top: 1.5rem; border-top: 3px solid #000; }
+        }
+
+        /* 5. DESAIN BUBBLE WARNA PLATFORM */
+        .manga-btn {
+            border: 3px solid #000;
+            box-shadow: 5px 5px 0px #000;
+            transition: all 0.2s cubic-bezier(0.25, 1, 0.5, 1);
+            display: flex;
+            align-items: stretch; 
+            min-height: 3.5rem;
+            text-decoration: none;
+            overflow: hidden; 
+        }
+        .manga-btn:hover:not(:disabled) {
+            transform: translate(-3px, -3px);
+            box-shadow: 8px 8px 0px #000;
+        }
+        .manga-btn:active:not(:disabled) {
+            transform: translate(5px, 5px);
+            box-shadow: 0px 0px 0px #000;
+        }
+        .manga-btn:disabled { cursor: not-allowed; opacity: 0.7; filter: grayscale(100%); }
+
+        .manga-icon {
+            width: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-right: 3px solid #000;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+        .manga-text {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 1rem;
+            font-weight: 900;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            font-size: 0.875rem;
+        }
+
+        .manga-label { transition: transform 0.2s cubic-bezier(0.25, 1, 0.5, 1); }
+        .manga-btn:hover .manga-label { transform: translateX(-12px); }
+        .manga-arrow {
+            position: absolute;
+            right: 1.5rem;
+            opacity: 0;
+            transform: translateX(-15px);
+            transition: all 0.2s cubic-bezier(0.25, 1, 0.5, 1);
+            font-size: 1rem;
+        }
+        .manga-btn:hover .manga-arrow { opacity: 1; transform: translateX(0); }
+
+        /* WARNA PLATFORM */
+        .btn-ig { background-color: #E1306C; color: #fff; }
+        .btn-ig .manga-icon { background-color: #fff; color: #E1306C; }
+        .btn-ig:hover:not(:disabled) { background-color: #000; color: #fff; }
+        .btn-ig:hover:not(:disabled) .manga-icon { background-color: #E1306C; color: #fff; }
+
+        .btn-fb { background-color: #1877F2; color: #fff; }
+        .btn-fb .manga-icon { background-color: #fff; color: #1877F2; }
+        .btn-fb:hover:not(:disabled) { background-color: #000; color: #fff; }
+        .btn-fb:hover:not(:disabled) .manga-icon { background-color: #1877F2; color: #fff; }
+
+        .btn-threads { background-color: #fff; color: #000; }
+        .btn-threads .manga-icon { background-color: #000; color: #fff; }
+        .btn-threads:hover:not(:disabled) { background-color: #000; color: #fff; }
+        .btn-threads:hover:not(:disabled) .manga-icon { background-color: #fff; color: #000; }
+
+        .btn-contact { background-color: #facc15; color: #000; }
+        .btn-contact .manga-icon { background-color: #fff; color: #000; }
+        .btn-contact:hover:not(:disabled) { background-color: #000; color: #facc15; }
+        .btn-contact:hover:not(:disabled) .manga-icon { background-color: #facc15; color: #000; }
+
+        .btn-trakteer { background-color: #dc2626; color: #fff; }
+        .btn-trakteer .manga-icon { background-color: #fff; color: #dc2626; }
+        .btn-trakteer:hover:not(:disabled) { background-color: #000; color: #fff; }
+        .btn-trakteer:hover:not(:disabled) .manga-icon { background-color: #dc2626; color: #fff; }
+
+        .btn-submit { background-color: #fff; color: #000; }
+        .btn-submit .manga-icon { background-color: #000; color: #fff; }
+        .btn-submit:hover:not(:disabled) { background-color: #000; color: #fff; }
+        .btn-submit:hover:not(:disabled) .manga-icon { background-color: #fff; color: #000; }
+
+        /* 6. ELEMEN PENDUKUNG & MODAL */
+        .manga-input { border: 3px solid #000; background-color: #fff; transition: all 0.2s; }
+        .manga-input:focus { outline: none; box-shadow: 4px 4px 0px #000; transform: translate(-2px, -2px); }
+
+        .manga-strike {
+            position: absolute; width: 130%; height: 15px;
+            background: repeating-linear-gradient(45deg, #000, #000 2px, transparent 2px, transparent 6px);
+            z-index: -1; top: 50%; left: -15%; transform: translateY(-50%) rotate(-5deg);
+        }
+
+        .manga-modal-card { width: 100%; max-width: 24rem; background-color: #ffffff; border: 4px solid #000; box-shadow: 10px 10px 0px #000; }
+        @media (min-width: 768px) { .manga-modal-card { max-width: 28rem; } }
+        
+        .modal-overlay-bg { background-color: rgba(255, 255, 255, 0.85); backdrop-filter: blur(4px); }
+        .transition-all { transition-property: all; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 300ms; }
+        .transform { transform: scale(var(--tw-scale-x, 1)) scale(var(--tw-scale-y, 1)); }
+        .scale-95 { --tw-scale-x: .95; --tw-scale-y: .95; }
+
+        /* ================= ANIMASI FULL TOMBOL CLOSE ================= */
+        .manga-close-btn {
+            position: absolute;
+            top: -1.5rem;
+            right: -1rem;
+            z-index: 50;
+            width: 2.5rem;
+            height: 2.5rem;
+            background-color: #ffffff;
+            border: 3px solid #000;
+            box-shadow: 4px 4px 0px #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            color: #000;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+        
+        .manga-close-btn:hover {
+            background-color: #dc2626; 
+            color: #ffffff;
+            transform: rotate(180deg) scale(1.1);
+            box-shadow: 6px 6px 0px #000;
+        }
+
+        .manga-close-btn:active {
+            transform: rotate(180deg) scale(0.9) translate(4px, 4px);
+            box-shadow: 0px 0px 0px #000;
+            transition: all 0.1s ease;
+        }
+        /* ============================================================= */
+
+    </style>
+    </head>
+<body class="flex justify-center items-center min-h-screen p-4 md:p-8">
+
+    <div class="layout-panel relative z-10">
+        
+        <div class="profile-box">
+            
+            <div class="profile-avatar-wrap relative inline-block mb-6">
+                <div class="manga-strike"></div>
+                
+                <img src="BAWANG.png" alt="Logo ZonaBawang" style="width: 7rem; height: 7rem;" class="object-cover border-[4px] border-black bg-white z-10 relative">
+                </div>
+            
+            <h1 style="font-size: 2rem; line-height: 1.2; margin-bottom: 0.5rem;" class="font-black uppercase tracking-widest text-black">ZonaBawang</h1>
+            
+            <p style="font-size: 0.875rem; line-height: 1.6; margin-bottom: 1rem;" class="text-black font-bold">
+                KOMUNITAS ANIME & GAMING.<br>IKUTI KESERUAN KAMI, DUKUNG KARYA KAMI, ATAU HUBUNGI KAMI.
+            </p>
+
+            <div class="footer-desktop">
+                <p style="font-size: 0.75rem;" class="font-bold text-gray-500 uppercase tracking-widest">POWERED BY <span class="text-black">ZONABAWANG</span></p>
+            </div>
+            
+        </div>
+        
+        <div class="links-wrapper">
+            <div class="links-box">
+                
+                <a href="https://www.instagram.com/zonabawang" data-nama="Instagram" class="track-link manga-btn btn-ig" target="_blank">
+                    <div class="manga-icon"><i class="fa-brands fa-instagram" style="font-size: 1.5rem;"></i></div>
+                    <div class="manga-text">
+                        <span class="manga-label">Instagram</span>
+                        <i class="fa-solid fa-arrow-right manga-arrow"></i>
+                    </div>
+                </a>
+                
+                <a href="https://www.facebook.com/zonabawangg" data-nama="Facebook" class="track-link manga-btn btn-fb" target="_blank">
+                    <div class="manga-icon"><i class="fa-brands fa-facebook-f" style="font-size: 1.5rem;"></i></div>
+                    <div class="manga-text">
+                        <span class="manga-label">Facebook</span>
+                        <i class="fa-solid fa-arrow-right manga-arrow"></i>
+                    </div>
+                </a>
+                
+                <a href="https://www.threads.com/@zonabawang" data-nama="Threads" class="track-link manga-btn btn-threads" target="_blank">
+                    <div class="manga-icon"><i class="fa-brands fa-threads" style="font-size: 1.5rem;"></i></div>
+                    <div class="manga-text">
+                        <span class="manga-label">Threads</span>
+                        <i class="fa-solid fa-arrow-right manga-arrow"></i>
+                    </div>
+                </a>
+                
+                <button id="openContactModal" data-nama="Form_Kontak" class="track-link manga-btn btn-contact btn-full">
+                    <div class="manga-icon"><i class="fa-solid fa-envelope" style="font-size: 1.5rem;"></i></div>
+                    <div class="manga-text">
+                        <span class="manga-label">Hubungi Kami</span>
+                        <i class="fa-solid fa-arrow-right manga-arrow"></i>
+                    </div>
+                </button>
+
+                <a href="https://trakteer.id/zonabawang" data-nama="Trakteer" class="track-link manga-btn btn-trakteer btn-full" target="_blank">
+                    <div class="manga-icon"><i class="fa-solid fa-mug-hot" style="font-size: 1.5rem;"></i></div>
+                    <div class="manga-text">
+                        <span class="manga-label">Dukung (Trakteer)</span>
+                        <i class="fa-solid fa-arrow-right manga-arrow"></i>
+                    </div>
+                </a>
+                
+            </div>
+
+            <div class="footer-mobile">
+                <p style="font-size: 0.75rem;" class="font-bold text-gray-500 uppercase tracking-widest">POWERED BY <span class="text-black">ZONABAWANG</span></p>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="contactModal" class="fixed inset-0 z-50 flex items-center justify-center hidden opacity-0 transition-all modal-overlay-bg p-4">
+        <div class="manga-modal-card p-6 relative transform scale-95 transition-all" id="modalContent">
+            
+            <button id="closeContactModal" class="manga-close-btn" title="Tutup">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            
+            <div data-fs-success style="display: none;" class="text-center py-8 mt-4">
+                <i class="fa-solid fa-circle-check text-green-600 mb-4" style="font-size: 3rem;"></i>
+                <p style="font-size: 1.25rem; margin-bottom: 0.5rem;" class="text-black font-black uppercase tracking-widest">Pesan Terkirim!</p>
+                <p style="font-size: 0.875rem;" class="text-black font-bold">Terima kasih. Tim ZonaBawang akan segera membalas.</p>
+            </div>
+
+            <div data-fs-error style="display: none; padding: 0.75rem; border: 2px solid #000; margin-top: 1rem;" class="text-sm text-center mb-4 text-white font-bold bg-red-600"></div>
+            
+            <form id="contactForm" class="flex flex-col gap-4 mt-2">
+                <h2 style="font-size: 1.25rem; padding-bottom: 0.5rem; border-bottom: 2px solid #000;" class="font-black uppercase tracking-widest mb-2 text-black">Kirim Pesan</h2>
+                
+                <input type="text" name="name" placeholder="NAMA ANDA" required data-fs-field
+                       style="padding: 0.75rem 1rem; font-size: 0.875rem;" class="w-full manga-input text-black font-bold uppercase">
+                
+                <input type="email" name="email" placeholder="EMAIL ANDA" required data-fs-field
+                       style="padding: 0.75rem 1rem; font-size: 0.875rem;" class="w-full manga-input text-black font-bold uppercase">
+                
+                <textarea name="message" placeholder="TULIS PESAN ANDA DI SINI..." rows="4" required data-fs-field
+                          style="padding: 0.75rem 1rem; font-size: 0.875rem;" class="w-full manga-input text-black font-bold uppercase resize-none"></textarea>
+                
+                <button type="submit" data-fs-submit-btn class="manga-btn btn-submit w-full mt-2" style="border: 3px solid #000;">
+                    <div class="manga-icon" style="width: 3.5rem;">
+                        <i class="fa-solid fa-paper-plane" style="font-size: 1.25rem;"></i>
+                    </div>
+                    <div class="manga-text" style="font-size: 0.75rem;">
+                        <span class="manga-label">Kirim Sekarang</span>
+                        <i class="fa-solid fa-arrow-right manga-arrow"></i>
+                    </div>
+                </button>
+            </form>
+        </div>
+    </div>
+    <script>
+        window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+        formspree('initForm', { formElement: '#contactForm', formId: 'mgodazrb' });
+    </script>
+    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            // Logic Analytics Tracking
+            const links = document.querySelectorAll('.track-link');
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    const platformName = this.getAttribute('data-nama');
+                    const urlTujuan = this.getAttribute('href') || 'Modal_Terbuka';
+                    if(typeof gtag === 'function') {
+                        gtag('event', 'klik_tautan', {
+                            'event_category': 'Link In Bio',
+                            'event_label': platformName,
+                            'url_tujuan': urlTujuan
+                        });
+                    }
+                });
+            });
+
+            // Logic Modal Form
+            const modal = document.getElementById('contactModal');
+            const modalContent = document.getElementById('modalContent');
+            const openBtn = document.getElementById('openContactModal');
+            const closeBtn = document.getElementById('closeContactModal');
+
+            openBtn.addEventListener('click', () => {
+                modal.classList.remove('hidden');
+                setTimeout(() => {
+                    modal.style.opacity = '1';
+                    modalContent.style.transform = 'scale(1)';
+                }, 10);
+            });
+
+            const closeModal = () => {
+                modal.style.opacity = '0';
+                modalContent.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    modal.classList.add('hidden');
+                }, 300);
+            };
+
+            closeBtn.addEventListener('click', closeModal);
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) closeModal();
+            });
+
+        });
+    </script>
+    </body>
+</html>
